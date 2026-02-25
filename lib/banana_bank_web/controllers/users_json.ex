@@ -8,6 +8,12 @@ defmodule BananaBankWeb.UsersJSON do
     }
   end
 
+   def get(%{user: user}) do
+    %{
+      data: data(user)
+    }
+  end
+
   defp data(%User{} = user) do
     %{
       id: user.id,
