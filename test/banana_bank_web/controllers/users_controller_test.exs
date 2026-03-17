@@ -14,6 +14,7 @@ defmodule BananaBankWeb.UsersControllerTest do
         password: "12345678"
       }
 
+
       response =
         conn
         |> post(~p"/api/users", params)
