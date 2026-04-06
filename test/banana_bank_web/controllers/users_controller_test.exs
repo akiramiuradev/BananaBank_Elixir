@@ -8,10 +8,10 @@ defmodule BananaBankWeb.UsersControllerTest do
     test "successfully creates an user", %{conn: conn} do
 
       params = %{
-        name: "joão",
-        cep: "12345678",
-        email: "joao@joao.com",
-        password: "12345678"
+        "name" => "joão",
+        "cep" => "16520970",
+        "email" => "joao@joao.com",
+        "password" => "12345678"
       }
 
 
@@ -22,7 +22,7 @@ defmodule BananaBankWeb.UsersControllerTest do
 
       assert %{
               "data" => %{
-                "cep" => "12345678",
+                "cep" => "16520970",
                 "email" => "joao@joao.com",
                 "id" => _id,
                 "name" => "joão"
@@ -35,16 +35,17 @@ defmodule BananaBankWeb.UsersControllerTest do
     test "when there are invalid params, returns an error", %{conn: conn} do
 
       params = %{
-        name: "joão",
-        cep: "12",
-        email: "joaojoao.com",
-        password: "123456"
+        "name" => "joão",
+        "cep" => "12",
+        "email" => "joaojoao.com",
+        "password" => "123456"
       }
 
       response =
         conn
         |> post(~p"/api/users", params)
         |> json_response(:bad_request)
+
 
 
       expected_response = %{
@@ -64,10 +65,10 @@ defmodule BananaBankWeb.UsersControllerTest do
     test "sucessfully deletes an user", %{conn: conn} do
 
     params = %{
-        name: "joão",
-        cep: "12345678",
-        email: "joao@joao.com",
-        password: "12345678"
+        "name" => "joão",
+        "cep" => "16520970",
+        "email" => "joao@joao.com",
+        "password" => "12345678"
       }
 
     {:ok, %User{id: id}} = Users.create(params)
@@ -79,7 +80,7 @@ defmodule BananaBankWeb.UsersControllerTest do
 
     expected_response = %{
               "data" => %{
-                "cep" => "12345678",
+                "cep" => "16520970",
                 "email" => "joao@joao.com",
                 "id" => id,
                 "name" => "joão"

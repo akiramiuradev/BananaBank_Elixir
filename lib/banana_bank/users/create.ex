@@ -8,6 +8,12 @@ defmodule BananaBank.Users.Create do
       params
       |> User.changeset()
       |> Repo.insert()
+
+    else
+      _error ->
+        params
+        |> User.changeset()
+        |> then(&{:error, &1})
     end
 
   end

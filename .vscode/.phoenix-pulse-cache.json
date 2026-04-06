@@ -1,0 +1,637 @@
+{
+  "version": "1.0.0",
+  "timestamp": 1775049181701,
+  "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir",
+  "registries": {
+    "components": {
+      "components": [
+        [
+          "__phoenix_builtins__",
+          [
+            {
+              "name": "link",
+              "moduleName": "Phoenix.Component",
+              "filePath": "c:\\Users\\guilh\\.vscode\\extensions\\onsever.phoenix-pulse-1.3.0\\node_modules\\@phoenix-pulse\\language-server\\resources\\phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.link/1 – Generates an anchor tag that supports LiveView-aware navigation.",
+              "attributes": [
+                {
+                  "name": "navigate",
+                  "type": "string",
+                  "required": false,
+                  "doc": "Use VerifiedRoutes: `navigate={~p\"/path\"}`"
+                },
+                {
+                  "name": "patch",
+                  "type": "string",
+                  "required": false,
+                  "doc": "Use VerifiedRoutes: `patch={~p\"/path\"}`"
+                },
+                {
+                  "name": "href",
+                  "type": "string",
+                  "required": false,
+                  "doc": "External/legacy target. Prefer `navigate`/`patch` with VerifiedRoutes."
+                },
+                {
+                  "name": "method",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_patch",
+              "moduleName": "Phoenix.Component",
+              "filePath": "c:\\Users\\guilh\\.vscode\\extensions\\onsever.phoenix-pulse-1.3.0\\node_modules\\@phoenix-pulse\\language-server\\resources\\phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_patch/1 – Generates a patch navigation link within the same LiveView.",
+              "attributes": [
+                {
+                  "name": "patch",
+                  "type": "string",
+                  "required": true,
+                  "doc": "Use VerifiedRoutes: `patch={~p\"/path\"}`"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_redirect",
+              "moduleName": "Phoenix.Component",
+              "filePath": "c:\\Users\\guilh\\.vscode\\extensions\\onsever.phoenix-pulse-1.3.0\\node_modules\\@phoenix-pulse\\language-server\\resources\\phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_redirect/1 – Generates a redirect navigation link to another LiveView or controller.",
+              "attributes": [
+                {
+                  "name": "navigate",
+                  "type": "string",
+                  "required": true,
+                  "doc": "Use VerifiedRoutes: `navigate={~p\"/path\"}`"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_component",
+              "moduleName": "Phoenix.Component",
+              "filePath": "c:\\Users\\guilh\\.vscode\\extensions\\onsever.phoenix-pulse-1.3.0\\node_modules\\@phoenix-pulse\\language-server\\resources\\phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_component/1 – Embeds a stateful LiveComponent from HEEx.",
+              "attributes": [
+                {
+                  "name": "module",
+                  "type": "module",
+                  "required": true,
+                  "doc": "LiveComponent module (e.g., `module={MyAppWeb.ModalComponent}`)."
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": true
+                },
+                {
+                  "name": ":for",
+                  "type": "any",
+                  "required": false
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "form",
+              "moduleName": "Phoenix.Component",
+              "filePath": "c:\\Users\\guilh\\.vscode\\extensions\\onsever.phoenix-pulse-1.3.0\\node_modules\\@phoenix-pulse\\language-server\\resources\\phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.form/1 – Renders a HEEx form with support for :let assigns and action attributes.",
+              "attributes": [
+                {
+                  "name": "for",
+                  "type": "any",
+                  "required": true
+                },
+                {
+                  "name": "as",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "action",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "method",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "phx-submit",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "phx-change",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                },
+                {
+                  "name": "actions",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "inputs_for",
+              "moduleName": "Phoenix.Component",
+              "filePath": "c:\\Users\\guilh\\.vscode\\extensions\\onsever.phoenix-pulse-1.3.0\\node_modules\\@phoenix-pulse\\language-server\\resources\\phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.inputs_for/1 – Iterates nested inputs for associations or embeds within a parent form.",
+              "attributes": [
+                {
+                  "name": "field",
+                  "type": "any",
+                  "required": true,
+                  "doc": "Form field or association (e.g., `field={f[:addresses]}`)."
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": true,
+                  "doc": "Binding for the nested form (e.g., `:let={address_form}`)."
+                },
+                {
+                  "name": "for",
+                  "type": "any",
+                  "required": false,
+                  "doc": "Explicit changeset/source for the nested inputs."
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\config\\dev.exs",
+          []
+        ],
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\test\\BananaBank\\via_cep\\client.exs",
+          []
+        ]
+      ],
+      "fileHashes": {
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\config\\dev.exs": "5c7092cc64a0f08a2490ce70ac783e87d05ecbfd",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\test\\BananaBank\\via_cep\\client.exs": "19d23149127357e470cce136e6bdc992928eccac"
+      },
+      "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir"
+    },
+    "schemas": {
+      "schemas": [
+        [
+          "BananaBank.Users.User",
+          {
+            "moduleName": "BananaBank.Users.User",
+            "tableName": "users",
+            "fields": [
+              {
+                "name": "id",
+                "type": "id"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "password",
+                "type": "string"
+              },
+              {
+                "name": "password_hash",
+                "type": "string"
+              },
+              {
+                "name": "email",
+                "type": "string"
+              },
+              {
+                "name": "cep",
+                "type": "string"
+              },
+              {
+                "name": "inserted_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "updated_at",
+                "type": "naive_datetime"
+              }
+            ],
+            "associations": {},
+            "associationsDetailed": [],
+            "aliases": {},
+            "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank\\users\\user.ex",
+            "line": 8
+          }
+        ]
+      ],
+      "schemasByFile": [
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank\\users\\user.ex",
+          [
+            {
+              "moduleName": "BananaBank.Users.User",
+              "tableName": "users",
+              "fields": [
+                {
+                  "name": "id",
+                  "type": "id"
+                },
+                {
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "name": "password",
+                  "type": "string"
+                },
+                {
+                  "name": "password_hash",
+                  "type": "string"
+                },
+                {
+                  "name": "email",
+                  "type": "string"
+                },
+                {
+                  "name": "cep",
+                  "type": "string"
+                },
+                {
+                  "name": "inserted_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "updated_at",
+                  "type": "naive_datetime"
+                }
+              ],
+              "associations": {},
+              "associationsDetailed": [],
+              "aliases": {},
+              "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank\\users\\user.ex",
+              "line": 8
+            }
+          ]
+        ]
+      ],
+      "fileHashes": {
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank\\users\\user.ex": "1f853dd77ad5563adb87dffa846463d21098ac2a"
+      },
+      "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir"
+    },
+    "events": {
+      "events": [
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\config\\dev.exs",
+          []
+        ],
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\test\\BananaBank\\via_cep\\client.exs",
+          []
+        ]
+      ],
+      "fileHashes": {
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\config\\dev.exs": "5c7092cc64a0f08a2490ce70ac783e87d05ecbfd",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\test\\BananaBank\\via_cep\\client.exs": "19d23149127357e470cce136e6bdc992928eccac"
+      },
+      "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir"
+    },
+    "routes": {
+      "routes": [
+        {
+          "verb": "GET",
+          "path": "/api/",
+          "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\router.ex",
+          "line": 11,
+          "controller": "WelcomeController",
+          "action": "index",
+          "helperBase": "root",
+          "params": [],
+          "isResource": false,
+          "pipeline": "api",
+          "scopePath": "/api"
+        },
+        {
+          "verb": "POST",
+          "path": "/api/users",
+          "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\router.ex",
+          "line": 12,
+          "controller": "UsersController",
+          "action": "create",
+          "helperBase": "user",
+          "params": [],
+          "isResource": true,
+          "resourceOptions": {
+            "only": [
+              "create",
+              "update",
+              "delete",
+              "show"
+            ]
+          },
+          "pipeline": "api",
+          "scopePath": "/api"
+        },
+        {
+          "verb": "GET",
+          "path": "/api/users/:id",
+          "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\router.ex",
+          "line": 12,
+          "controller": "UsersController",
+          "action": "show",
+          "helperBase": "user",
+          "params": [
+            "id"
+          ],
+          "isResource": true,
+          "resourceOptions": {
+            "only": [
+              "create",
+              "update",
+              "delete",
+              "show"
+            ]
+          },
+          "pipeline": "api",
+          "scopePath": "/api"
+        },
+        {
+          "verb": "PATCH",
+          "path": "/api/users/:id",
+          "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\router.ex",
+          "line": 12,
+          "controller": "UsersController",
+          "action": "update",
+          "helperBase": "user",
+          "params": [
+            "id"
+          ],
+          "isResource": true,
+          "resourceOptions": {
+            "only": [
+              "create",
+              "update",
+              "delete",
+              "show"
+            ]
+          },
+          "pipeline": "api",
+          "scopePath": "/api"
+        },
+        {
+          "verb": "PUT",
+          "path": "/api/users/:id",
+          "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\router.ex",
+          "line": 12,
+          "controller": "UsersController",
+          "action": "update",
+          "helperBase": "user",
+          "params": [
+            "id"
+          ],
+          "isResource": true,
+          "resourceOptions": {
+            "only": [
+              "create",
+              "update",
+              "delete",
+              "show"
+            ]
+          },
+          "pipeline": "api",
+          "scopePath": "/api"
+        },
+        {
+          "verb": "DELETE",
+          "path": "/api/users/:id",
+          "filePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\router.ex",
+          "line": 12,
+          "controller": "UsersController",
+          "action": "delete",
+          "helperBase": "user",
+          "params": [
+            "id"
+          ],
+          "isResource": true,
+          "resourceOptions": {
+            "only": [
+              "create",
+              "update",
+              "delete",
+              "show"
+            ]
+          },
+          "pipeline": "api",
+          "scopePath": "/api"
+        }
+      ],
+      "fileHashes": {
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\router.ex": "34c7cf436b73953cabc5edd7f4dbd1cc1f60be18"
+      },
+      "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir"
+    },
+    "controllers": {
+      "rendersByFile": [
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\users_controller.ex",
+          [
+            {
+              "controllerModule": "BananaBankWeb.UsersController",
+              "controllerFile": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\users_controller.ex",
+              "action": "create",
+              "templateName": "user: user",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "actionBody": "  def create(conn, params) do\n    with {:ok, %User{} = user} <- Users.create(params) do\n      conn\n      |> put_status(:created)\n      |> render(:create, user: user)\n    end\n  end",
+              "line": 13
+            },
+            {
+              "controllerModule": "BananaBankWeb.UsersController",
+              "controllerFile": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\users_controller.ex",
+              "action": "delete",
+              "templateName": "user: user",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "actionBody": "  def delete(conn, %{\"id\" => id}) do\n    with {:ok, %User{} = user} <- Users.delete(id) do\n      conn\n      |> put_status(:ok)\n      |> render(:delete, user: user)\n    end\n  end",
+              "line": 21
+            },
+            {
+              "controllerModule": "BananaBankWeb.UsersController",
+              "controllerFile": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\users_controller.ex",
+              "action": "show",
+              "templateName": "user: user",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "actionBody": "  def show(conn, %{\"id\" => id}) do\n    with {:ok, %User{} = user} <- Users.get(id) do\n      conn\n      |> put_status(:ok)\n      |> render(:get, user: user)\n    end\n  end",
+              "line": 29
+            },
+            {
+              "controllerModule": "BananaBankWeb.UsersController",
+              "controllerFile": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\users_controller.ex",
+              "action": "update",
+              "templateName": "user: user",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "actionBody": "  def update(conn, params) do\n    with {:ok, %User{} = user} <- Users.update(params) do\n      conn\n      |> put_status(:ok)\n      |> render(:update, user: user)\n    end\n  end",
+              "line": 37
+            }
+          ]
+        ],
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\fallback_controller.ex",
+          [
+            {
+              "controllerModule": "BananaBankWeb.FallbackController",
+              "controllerFile": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\fallback_controller.ex",
+              "action": "call",
+              "templateName": "status: :not_found",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "actionBody": "  def call(conn, {:error, changeset}) do\n    conn\n    |> put_status(:bad_request)\n    |> put_view(json: BananaBankWeb.ErrorJSON)\n    |> render(:error, changeset: changeset)\n  end",
+              "line": 8
+            },
+            {
+              "controllerModule": "BananaBankWeb.FallbackController",
+              "controllerFile": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\fallback_controller.ex",
+              "action": "call",
+              "templateName": "status: :bad_request",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "actionBody": "  def call(conn, {:error, changeset}) do\n    conn\n    |> put_status(:bad_request)\n    |> put_view(json: BananaBankWeb.ErrorJSON)\n    |> render(:error, changeset: changeset)\n  end",
+              "line": 15
+            },
+            {
+              "controllerModule": "BananaBankWeb.FallbackController",
+              "controllerFile": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\fallback_controller.ex",
+              "action": "call",
+              "templateName": "changeset: changeset",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "actionBody": "  def call(conn, {:error, changeset}) do\n    conn\n    |> put_status(:bad_request)\n    |> put_view(json: BananaBankWeb.ErrorJSON)\n    |> render(:error, changeset: changeset)\n  end",
+              "line": 22
+            }
+          ]
+        ],
+        [
+          "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\welcome_controller.ex",
+          []
+        ]
+      ],
+      "templateSummaries": [],
+      "fileHashes": {
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\users_controller.ex": "8722b482f15a0fc63ca69d9ca27f13e1ed400896",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\fallback_controller.ex": "dbdfb3808fd48fbe31446eee1ba61db83b163461",
+        "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir\\lib\\banana_bank_web\\controllers\\welcome_controller.ex": "4a09dc5ee49a06516ad17fdaf3697bafbedeac86"
+      },
+      "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir"
+    },
+    "templates": {
+      "templatesByModule": [],
+      "templatesByPath": [],
+      "moduleByFile": [],
+      "fileHashes": {},
+      "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir"
+    },
+    "liveview": {
+      "liveViews": [],
+      "fileHashes": {},
+      "workspaceRoot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\akiraubuntu\\BananaBank_Elixir"
+    }
+  },
+  "fileHashes": {}
+}

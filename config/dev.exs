@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :banana_bank, BananaBank.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "akiraubuntu",
+  password: "141230",
   hostname: "localhost",
   database: "banana_bank_dev",
   stacktrace: true,
