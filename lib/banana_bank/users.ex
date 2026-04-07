@@ -6,7 +6,7 @@ defmodule BananaBank.Users do
 
   defdelegate create(params), to: Create, as: :call
 
-  defdelegate delete(params), to: Delete, as: :call
+  defdelegate delete(id), to: Delete, as: :call
 
   defdelegate get(id), to: Get, as: :call
 

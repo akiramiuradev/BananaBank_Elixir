@@ -4,7 +4,7 @@ defmodule BananaBank.Repo.Migrations.AddAccountsTable do
   def change do
     create table :accounts do
       add :balance, :decimal
-      add :user_id, references(:users)
+      add :user_id, references(:users, on_delete: :delete_all)
 
       timestamps()
     end
