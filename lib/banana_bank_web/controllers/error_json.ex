@@ -18,9 +18,9 @@ defmodule BananaBankWeb.ErrorJSON do
   @spec render(any(), any()) :: %{errors: %{detail: <<_::16, _::_*8>>}}
 
   def render("error.json", %{changeset: changeset}) do
-  %{
-    errors: Ecto.Changeset.traverse_errors(changeset, &translate_errors/1)
-  }
+    %{
+      errors: Ecto.Changeset.traverse_errors(changeset, &translate_errors/1)
+    }
   end
 
   def render(template, _assigns) do
@@ -40,15 +40,19 @@ defmodule BananaBankWeb.ErrorJSON do
     }
   end
 
+  def error(%{msg: msg}) do
+    %{
+      message: msg
+    }
+  end
+
   def error(%{changeset: changeset}) do
     %{
       errors: Ecto.Changeset.traverse_errors(changeset, &translate_errors/1)
     }
   end
 
-
-
-  defp translate_errors({msg,opts}) do
+  defp translate_errors({msg, opts}) do
     Regex.replace(~r"%{(\w+)}", msg, fn _, key ->
       opts |> Keyword.get(String.to_existing_atom(key), key) |> to_string()
     end)
